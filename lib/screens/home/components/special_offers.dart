@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payani/screens/hotel_description/description_screen.dart';
+import 'package:payani/screens/home_details/home_detail_screen.dart';
+
 
 import '../../../size_config.dart';
 import 'section_title.dart';
@@ -18,13 +19,15 @@ class SpecialOffers extends StatelessWidget {
               EdgeInsets.symmetric(horizontal: getProportionateScreenWidth(18)),
           child: SectionTitle(
             title: "Popular Hotels",
-            press: () {
-              Navigator.pushNamed(context, DestinationScreen.routeName);
+            press: () { 
+
+             
             },
           ),
         ),
         SizedBox(height: getProportionateScreenWidth(18)),
         SingleChildScrollView(
+          
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
@@ -32,8 +35,8 @@ class SpecialOffers extends StatelessWidget {
                 image: "assets/images/Image Banner 2.png",
                 category: "Five Star hotel",
                 numOfBrands: 18,
-                press: () {
-                  Navigator.pushNamed(context, DestinationScreen.routeName);
+                press: () {   Navigator.pushNamed(context, HomeDetailsSreen.routeName);
+                 ;
                 },
               ),
               SpecialOfferCard(
@@ -41,7 +44,7 @@ class SpecialOffers extends StatelessWidget {
                 category: "Three star hotel",
                 numOfBrands: 24,
                 press: () {
-                  Navigator.pushNamed(context, DestinationScreen.routeName);
+                 
                 },
               ),
               SizedBox(width: getProportionateScreenWidth(20)),
