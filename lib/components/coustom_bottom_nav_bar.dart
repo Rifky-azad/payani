@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:payani/screens/home/home_screen.dart';
+import 'package:payani/screens/message/message_screen.dart';
 import 'package:payani/screens/profile/profile_screen.dart';
 
 import '../constants.dart';
@@ -60,8 +61,11 @@ class CustomBottomNavBar extends StatelessWidget {
                onPressed: () => Navigator.pushNamed(context, CartScreen.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/Chat bubble Icon.svg"),
-                onPressed: () {},
+                icon: SvgPicture.asset("assets/icons/Chat bubble Icon.svg",
+                   color: MenuState.message == selectedMenu
+                      ? kPrimaryColor
+                      : inActiveIconColor,),
+                onPressed: ()  => Navigator.pushNamed(context, MessageScreen.routeName),
               ),
               IconButton(
                 icon: SvgPicture.asset(

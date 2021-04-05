@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:payani/screens/home_details/home_details_screen.dart';
+
+import 'package:payani/screens/home_details/hotel_room_screen.dart';
 
 
 
@@ -37,7 +38,7 @@ class SpecialOffers extends StatelessWidget {
                 image: "assets/images/Image Banner 2.png",
                 category: "Five Star hotel",
                 numOfBrands: 18,
-                press: () {Navigator.pushNamed(context, HomeDetailsScreen.routeName);
+                press: () {Navigator.pushNamed(context, HotelRoomsScreen.routeName);
                  ;
                 },
               ),

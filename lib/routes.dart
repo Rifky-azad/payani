@@ -1,5 +1,7 @@
 
 
+
+
 import 'package:flutter/widgets.dart';
 import 'package:payani/screens/cart/cart_screen.dart';
 import 'package:payani/screens/checkin_success/checkin_success_screen.dart';
@@ -9,12 +11,14 @@ import 'package:payani/screens/details/details_screen.dart';
 import 'package:payani/screens/filter/filter_screen.dart';
 import 'package:payani/screens/forgot_password/forgot_password_screen.dart';
 import 'package:payani/screens/home/home_screen.dart';
-import 'package:payani/screens/home_details/home_details_screen.dart';
+
+import 'package:payani/screens/home_details/hotel_room_screen.dart';
 
 
 import 'package:payani/screens/invite_friends/invite_friends_screen.dart';
 //import 'package:payani/screens/hotel_details/hdetails_screen.dart';
 import 'package:payani/screens/login_success/login_success_screen.dart';
+import 'package:payani/screens/message/message_screen.dart';
 import 'package:payani/screens/otp/otp_screen.dart';
 import 'package:payani/screens/privacy_policy/privacy_policy_screen.dart';
 import 'package:payani/screens/profile/profile_screen.dart';
@@ -46,5 +50,6 @@ final Map<String, WidgetBuilder> routes = {
   PrivacyPolicyScreen.routeName: (context) => PrivacyPolicyScreen(),
   InviteFriendsScreen.routeName: (context) => InviteFriendsScreen(),
   ReviewScreen.routeName: (context) => ReviewScreen(),
-  HomeDetailsScreen.routeName:(context) => HomeDetailsScreen(),
+  HotelRoomsScreen.routeName:(context) => HotelRoomsScreen(),
+  MessageScreen.routeName:(context) => MessageScreen(),
 };
