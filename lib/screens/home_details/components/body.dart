@@ -1,59 +1,41 @@
 import 'package:flutter/material.dart';
 import 'package:payani/components/default_button.dart';
-import 'package:payani/models/Product.dart';
+import 'package:payani/screens/home/home_screen.dart';
 import 'package:payani/size_config.dart';
 
-
-import 'color_dots.dart';
-import 'product_description.dart';
-import 'top_rounded_container.dart';
-import 'product_images.dart';
-
 class Body extends StatelessWidget {
-  final Product product;
-
-  const Body({Key key, @required this.product}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    return ListView(
+    return SafeArea(
+        child: Column(
       children: [
-        ProductImages(product: product),
-        TopRoundedContainer(
-          color: Colors.white,
-          child: Column(
-            children: [
-              ProductDescription(
-                product: product,
-                pressOnSeeMore: () {},
-              ),
-              TopRoundedContainer(
-                color: Color(0xFFF6F7F9),
-                child: Column(
-                  children: [
-                    ColorDots(product: product),
-                    TopRoundedContainer(
-                      color: Colors.white,
-                      child: Padding(
-                        padding: EdgeInsets.only(
-                          left: SizeConfig.screenWidth * 0.15,
-                          right: SizeConfig.screenWidth * 0.15,
-                          bottom: getProportionateScreenWidth(40),
-                          top: getProportionateScreenWidth(15),
-                        ),
-                        child: DefaultButton(
-                          text: "Add To Cart",
-                          press: () {},
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
+        SizedBox(height: SizeConfig.screenHeight * 0.0001),
+        Image.asset(
+          "assets/images/hotel1.png",
+          height: SizeConfig.screenHeight * 0.34, //40%
+        ),
+        SizedBox(height: SizeConfig.screenHeight * 0.01),
+        Text(
+          "",
+          style: TextStyle(
+            fontSize: getProportionateScreenWidth(22),
+            fontWeight: FontWeight.bold,
+            color: Colors.black,
           ),
         ),
+        //Spacer(),
+        SizedBox(height: SizeConfig.screenHeight * 0.4),
+        SizedBox(
+          width: SizeConfig.screenWidth * 0.8,
+          child: DefaultButton(
+            text: "Back to home",
+            press: () {
+              Navigator.pushNamed(context, HomeScreen.routeName);
+            },
+          ),
+        ),
+        Spacer(),
       ],
-    );
+    ));
   }
 }

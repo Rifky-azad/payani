@@ -1,5 +1,4 @@
 
-import 'dart:js';
 
 import 'package:flutter/widgets.dart';
 import 'package:payani/screens/cart/cart_screen.dart';
@@ -10,7 +9,8 @@ import 'package:payani/screens/details/details_screen.dart';
 import 'package:payani/screens/filter/filter_screen.dart';
 import 'package:payani/screens/forgot_password/forgot_password_screen.dart';
 import 'package:payani/screens/home/home_screen.dart';
-import 'package:payani/screens/home_details/home_detail_screen.dart';
+import 'package:payani/screens/home_details/home_details_screen.dart';
+
 
 import 'package:payani/screens/invite_friends/invite_friends_screen.dart';
 //import 'package:payani/screens/hotel_details/hdetails_screen.dart';
@@ -46,5 +46,5 @@ final Map<String, WidgetBuilder> routes = {
   PrivacyPolicyScreen.routeName: (context) => PrivacyPolicyScreen(),
   InviteFriendsScreen.routeName: (context) => InviteFriendsScreen(),
   ReviewScreen.routeName: (context) => ReviewScreen(),
-  HomeDetailsSreen.routeName :(context) => HomeDetailsSreen(),
+  HomeDetailsScreen.routeName:(context) => HomeDetailsScreen(),
 };

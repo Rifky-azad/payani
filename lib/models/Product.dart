@@ -38,7 +38,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Wireless Controller for PS4™",
+    title: "Hotel Hilton Colombo ",
     price: 64.99,
     description: description,
     rating: 4.8,
@@ -56,7 +56,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Nike Sport White - Man Pant",
+    title: "Hotel Sangarila Colombo",
     price: 50.5,
     description: description,
     rating: 4.1,
@@ -73,7 +73,7 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Gloves XC Omega - Polygon",
+    title: "Hotel Royal palazz Colombo",
     price: 36.55,
     description: description,
     rating: 4.1,
@@ -91,7 +91,24 @@ List<Product> demoProducts = [
       Color(0xFFDECB9C),
       Colors.white,
     ],
-    title: "Logitech Head",
+    title: "Hotel Salimar Colombo",
+    price: 20.20,
+    description: description,
+    rating: 4.1,
+    isFavourite: true,
+  ),
+  Product(
+    id: 5,
+    images: [
+      "assets/images/wireless headset.png",
+    ],
+    colors: [
+      Color(0xFFF6625E),
+      Color(0xFF836DB8),
+      Color(0xFFDECB9C),
+      Colors.white,
+    ],
+    title: "Hotel Salimar Colombo",
     price: 20.20,
     description: description,
     rating: 4.1,
@@ -100,4 +117,4 @@ List<Product> demoProducts = [
 ];
 
 const String description =
-    "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
+    "Bright, warm rooms offer Wi-Fi (fee), flat-screen TVs, minibars, and tea and coffeemaking facilities. Some have ocean views. Suites and club rooms gain access to a lounge offering free breakfast and snacks; they also feature separate living rooms. Room service is available …";
