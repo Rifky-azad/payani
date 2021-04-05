@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:payani/screens/google_map/google_map_screen.dart';
 
-
 class HotelRoomsScreen extends StatefulWidget {
   static String routeName = "/hotelroom";
   HotelRoomsScreen() : super();
@@ -36,9 +35,9 @@ class _HotelRoomsScreenState extends State<HotelRoomsScreen> {
         SliverList(
           delegate: SliverChildListDelegate(
             [
-              Container(color: Colors.red, height: 150.0),
-              Container(color: Colors.purple, height: 150.0),
-              Container(color: Colors.green, height: 150.0),
+              Container(color: Colors.white60, height: 150.0),
+              Container(color: Colors.white54, height: 150.0),
+              Container(color: Colors.white38, height: 150.0),
             ],
           ),
         ),
@@ -64,8 +63,11 @@ class _HotelRoomsScreenState extends State<HotelRoomsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        onPressed: () => Navigator.push(context,MaterialPageRoute(builder:(context) =>GoogleMapScreen(),
-        ),
+        onPressed: () => Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => GoogleMapScreen(),
+          ),
         ),
         tooltip: 'Google Map',
         child: Icon(Icons.pin_drop_outlined),
